@@ -24,19 +24,9 @@ scipy>=1.11.0
 # Web UI
 gradio==6.0.1
 
-# Rendering (will be installed via setup.sh in TRELLIS.2 repo)
-# flash-attn (optional, for faster attention)
-# nvdiffrast (for rendering)
-# nvdiffrec (for PBR rendering)
-# o-voxel (sparse voxel representation)
-# cumesh (CUDA mesh operations)
-# flexgemm (sparse convolution)
-
-# Additional packages from TRELLIS.2 `setup.sh`
 # Utilities and extras
 tqdm>=4.65.0
 easydict>=1.9
-opencv-python-headless>=4.8.0
 ninja>=1.11.0
 tensorboard>=2.12.0
 pandas>=2.1.0
@@ -46,13 +36,6 @@ pillow-simd>=9.5.0
 kornia>=0.7.0
 timm>=0.9.0
 
-# Direct Git installs used upstream
+# Direct Git installs
 git+https://github.com/EasternJournalist/utils3d.git@9a4eb15e4021b67b12c460c7057d642626897ec8
-
-# Optional/extra native extensions (install via setup.sh or manual build)
-# flash-attn==2.7.3 (optional)
-# nvdiffrast (install via source wheel)
-# nvdiffrec (install via source wheel)
-# o-voxel (local package)
-# CuMesh, FlexGEMM (local packages)
 
