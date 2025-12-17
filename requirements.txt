@@ -33,11 +33,6 @@ gradio==6.0.1
 # flexgemm (sparse convolution)
 
 # Additional packages from TRELLIS.2 `setup.sh`
-# Note: `torch` and `torchvision` are pinned in the upstream script
-# to specific CUDA builds — install the correct wheel for your CUDA.
-torch==2.6.0
-torchvision==0.21.0
-
 # Utilities and extras
 tqdm>=4.65.0
 easydict>=1.9
