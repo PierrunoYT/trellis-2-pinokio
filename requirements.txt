@@ -1,0 +1,63 @@
+# TRELLIS.2 Dependencies
+# Based on official Microsoft TRELLIS.2 repository
+# https://github.com/microsoft/TRELLIS.2
+
+# Core dependencies
+diffusers>=0.30.0
+transformers>=4.35.0
+accelerate>=0.24.0
+safetensors>=0.4.0
+einops>=0.7.0
+omegaconf>=2.3.0
+
+# Image processing
+pillow>=10.0.0
+opencv-python-headless>=4.8.0
+imageio>=2.31.0
+imageio-ffmpeg>=0.4.9
+
+# 3D processing
+trimesh>=4.0.0
+numpy>=1.24.0
+scipy>=1.11.0
+
+# Web UI
+gradio==6.0.1
+
+# Rendering (will be installed via setup.sh in TRELLIS.2 repo)
+# flash-attn (optional, for faster attention)
+# nvdiffrast (for rendering)
+# nvdiffrec (for PBR rendering)
+# o-voxel (sparse voxel representation)
+# cumesh (CUDA mesh operations)
+# flexgemm (sparse convolution)
+
+# Additional packages from TRELLIS.2 `setup.sh`
+# Note: `torch` and `torchvision` are pinned in the upstream script
+# to specific CUDA builds — install the correct wheel for your CUDA.
+torch==2.6.0
+torchvision==0.21.0
+
+# Utilities and extras
+tqdm>=4.65.0
+easydict>=1.9
+opencv-python-headless>=4.8.0
+ninja>=1.11.0
+tensorboard>=2.12.0
+pandas>=2.1.0
+lpips>=0.1.4
+zstandard>=0.21.0
+pillow-simd>=9.5.0
+kornia>=0.7.0
+timm>=0.9.0
+
+# Direct Git installs used upstream
+git+https://github.com/EasternJournalist/utils3d.git@9a4eb15e4021b67b12c460c7057d642626897ec8
+
+# Optional/extra native extensions (install via setup.sh or manual build)
+# flash-attn==2.7.3 (optional)
+# nvdiffrast (install via source wheel)
+# nvdiffrec (install via source wheel)
+# o-voxel (local package)
+# CuMesh, FlexGEMM (local packages)
+
