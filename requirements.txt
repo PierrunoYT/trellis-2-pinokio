@@ -2,7 +2,7 @@
 # Based on official Microsoft TRELLIS.2 repository
 # https://github.com/microsoft/TRELLIS.2
 
-# Core dependencies
+# Core ML dependencies
 diffusers>=0.30.0
 transformers>=4.35.0
 accelerate>=0.24.0
@@ -22,9 +22,9 @@ numpy>=1.24.0
 scipy>=1.11.0
 
 # Web UI
-gradio==6.0.1
+gradio>=4.0.0
 
-# Utilities and extras
+# Utilities
 tqdm>=4.65.0
 easydict>=1.9
 ninja>=1.11.0
@@ -32,10 +32,17 @@ tensorboard>=2.12.0
 pandas>=2.1.0
 lpips>=0.1.4
 zstandard>=0.21.0
-pillow-simd>=9.5.0
 kornia>=0.7.0
 timm>=0.9.0
 
-# Direct Git installs
-git+https://github.com/EasternJournalist/utils3d.git@9a4eb15e4021b67b12c460c7057d642626897ec8
+# Additional dependencies for TRELLIS.2
+huggingface-hub>=0.20.0
+datasets>=2.16.0
+matplotlib>=3.7.0
+scikit-image>=0.21.0
+open3d>=0.18.0
+
+# Direct Git installs (will be handled separately in install script)
+# git+https://github.com/EasternJournalist/utils3d.git@9a4eb15e4021b67b12c460c7057d642626897ec8
+
 

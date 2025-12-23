@@ -23,8 +23,37 @@ This repository provides a [Pinokio](https://pinokio.computer/) script for easy 
 
 ## Requirements
 
-- **Hardware**: NVIDIA GPU with at least 24GB of memory is recommended (A100, H100, or RTX 3090/4090).
-- **Software**: Pinokio will handle the installation of Python, CUDA-compatible PyTorch, and all necessary extensions.
+- **Hardware**: NVIDIA GPU with at least 24GB of memory (RTX 3090/4090/5090, A100, H100)
+- **Software**: 
+  - **Windows**: Visual Studio Build Tools 2022 with C++ support + CUDA Toolkit 12.4
+  - **Linux**: GCC/G++ + CUDA Toolkit 12.4
+  - Pinokio will handle Python, PyTorch, and dependencies
+
+## Installation
+
+1. **Prerequisites (Windows only)**:
+   - Install [Visual Studio Build Tools 2022](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2022) with "Desktop development with C++"
+   - Install [CUDA Toolkit 12.4](https://developer.nvidia.com/cuda-12-4-0-download-archive)
+
+2. **Install Pinokio**: Download from [pinokio.computer](https://pinokio.computer/)
+
+3. **Install TRELLIS.2**:
+   - Open Pinokio and click "Download"
+   - Paste this repository URL: `https://github.com/cocktailpeanut/Trellis-2-Pinokio`
+   - Choose installation type:
+     - **"Install (Full)"**: Complete installation with all CUDA extensions (recommended)
+     - **"Install (Minimal)"**: Fallback installation if compilation fails
+
+4. **Wait for installation**: Full installation may take 30-60 minutes due to CUDA compilation
+
+## Windows Setup
+
+For detailed Windows setup instructions, see [WINDOWS_SETUP.md](WINDOWS_SETUP.md).
+
+**Common Windows issues**:
+- Missing Visual Studio Build Tools → Install with C++ support
+- CUDA compilation errors → Try minimal installation
+- GPU compatibility → RTX 20xx series may not work
 
 ## Usage
 

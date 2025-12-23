@@ -93,8 +93,12 @@ module.exports = {
       return [{
         default: true,
         icon: "fa-solid fa-plug",
-        text: "Install",
+        text: "Install (Full)",
         href: "install.js",
+      }, {
+        icon: "fa-solid fa-download",
+        text: "<div><strong>Install (Minimal)</strong><div>Fallback installation without CUDA extensions</div></div>",
+        href: "install-minimal.js",
       }]
     }
   }
